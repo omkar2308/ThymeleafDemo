@@ -15,7 +15,9 @@
 	</h1>
 	<h1>
 		Name of the owner is <span th:text="${#strings.toUpperCase(name)}"></span>
-	<p>	Length of the String is <span th:text="${ #strings.length(name)}"></span></p>
+		<p>
+			Length of the String is <span th:text="${ #strings.length(name)}"></span>
+		</p>
 	</h1>
 	<div th:with="a= 5, b=110 ,c=${name} ">
 
@@ -23,10 +25,9 @@
 			value of a is <span th:text=${a}></span>
 		</h1>
 		<h1>
-			value of c is <span th:text=${c}></span> 
+			value of c is <span th:text=${c}></span>
 		</h1>
-		<h1 th:text=" 'sum of '+${a} +' and '+${b} + ' is ='+ ${a+b}"> </h1>
+		<h1 th:text=" 'sum of '+${a} +' and '+${b} + ' is ='+ ${a+b}"></h1>
 	</div>
-
 </body>
 </html>
