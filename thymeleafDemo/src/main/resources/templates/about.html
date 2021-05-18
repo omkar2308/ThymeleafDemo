@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Document</title>
+</head>
+<body>
+	<h1>On about page</h1>
+
+	<h1 th:text="${name}"></h1>
+	<h1 th:text="${CurrentDate}"></h1>
+
+	<h1>
+		Name of the owner is <span th:text="${name}"></span>
+	</h1>
+	<div th:with="a= 5, b=110 ,c=${name} ">
+
+		<h1>
+			value of a is <span th:text=${a}></span>
+		</h1>
+		<h1>
+			value of c is <span th:text=${c}></span>
+		</h1>
+	</div>
+
+</body>
+</html>
