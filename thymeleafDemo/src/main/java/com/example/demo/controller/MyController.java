@@ -21,11 +21,23 @@ public class MyController {
 		return "about";
 	}
 
+	//handling iteration 
 	@GetMapping("/loop")
 	public String iteratorHandler(Model m )  {
 		
 		List<String> elements = List.of("akshay","omkar","abhi");
 		m.addAttribute("names", elements);
 		return "iterator";
+	}
+	
+	//handling condition 
+	@GetMapping("/condition")
+	public String conditionHandler(Model m) {
+		m.addAttribute("isActive", false);
+		m.addAttribute("gender","M");
+		
+		List<String> list = List.of("12","22","212");
+		m.addAttribute("mylist",list);
+		return "condition";
 	}
 }

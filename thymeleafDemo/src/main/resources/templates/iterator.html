@@ -12,10 +12,10 @@
 	<h1>traverse element in collections</h1>
 
 	<ul>
-		<li th:each="n,status :${names}">
-		<span th:style="${status.odd} ? 'font-weight:bold': 'color:red;font-weight:bold'  " th:text= " ${status.index+1}  +  ${n}"></span>
-		</li>
+		<li th:each="n,status :${names}"><span
+			th:style="${status.odd} ? 'font-weight:bold': 'color:red;font-weight:bold' "
+			th:text=" ${status.index+1}  +  ${n}"></span></li>
 
-	</ul> 
+	</ul>
 </body>
 </html>
