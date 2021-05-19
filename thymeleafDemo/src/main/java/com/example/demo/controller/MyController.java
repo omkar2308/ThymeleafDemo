@@ -40,4 +40,12 @@ public class MyController {
 		m.addAttribute("mylist",list);
 		return "condition";
 	}
+	
+//handler for including fragement 
+	@GetMapping("/services")
+	public String fragementHandler() {
+		
+		return "services";
+	}
+	
 }
