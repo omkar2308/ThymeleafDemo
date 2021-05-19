@@ -10,11 +10,13 @@
 
 	<!-- 	going to bring footer here -->
 
-	<footer id=hostTag th:insert="footer::footer1"> </footer>
+	<footer id=hostTag
+		th:insert="footer::footer1(${title},${Subtitle})">
+	</footer>
 
 	<!-- 	replace = replace hosttag with fragmenttag  -->
 	<!-- 	include= only content of fragmenttag include in hosttag -->
 	<!--    insert= insert fragmenttag in to hosttag -->
-	
+
 </body>
 </html>

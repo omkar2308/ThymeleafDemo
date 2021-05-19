@@ -1,7 +1,10 @@
 package com.example.demo.controller;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
+
+import javax.print.attribute.standard.DateTimeAtCompleted;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -43,8 +46,10 @@ public class MyController {
 	
 //handler for including fragement 
 	@GetMapping("/services")
-	public String fragementHandler() {
+	public String fragementHandler(Model m) {
 		
+		m.addAttribute("title","i like programing");
+		m.addAttribute("Subtitle",LocalDateTime.now().toString());
 		return "services";
 	}
 	
